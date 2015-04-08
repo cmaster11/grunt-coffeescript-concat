@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 
       var include = '';
       if (options.includeFolders && options.includeFolders.length) {
-        include = ' -I ' + options.includeFolders.join(' ');
+        include = ' -I ' + options.includeFolders.join(':');
       }
 
       var optionMaxBuffer = 200 * 1024;
